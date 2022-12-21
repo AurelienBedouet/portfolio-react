@@ -13,7 +13,7 @@ const Header = () => {
       {/* Header Text */}
       <div className="flex flex-col items-center">
         <h4>
-          {french ? "Construire Ensemble" : "Let's Build Something Together"}
+          {french ? "Construisons Ensemble" : "Let's Build Something Together"}
         </h4>
 
         <h1 className="py-4">
@@ -24,8 +24,8 @@ const Header = () => {
 
         <p className="text-lg py-4 sm:max-w-[70%] m-auto">
           {french
-            ? "Je crée des applications Web Front End responsives, rapides et performantes et sans oublier SEO tout en apprenant les technologies Back End."
-            : "I'm focused on building responsive, fast and highly performant Web Applications without forgetting SEO while learning back-end technologies."}
+            ? "Je m'applique à créer des applications Web responsives, rapides et performantes tout en apprenant les technologies Back End."
+            : "I'm focused on building responsive, fast and highly performant Web Applications while learning back-end technologies."}
         </p>
       </div>
 
