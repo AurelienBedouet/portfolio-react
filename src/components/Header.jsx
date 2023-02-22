@@ -13,7 +13,9 @@ const Header = () => {
       {/* Header Text */}
       <div className="flex flex-col items-center">
         <h4>
-          {french ? "Construisons Ensemble" : "Let's Build Something Together"}
+          {french
+            ? "Transformer votre projet web en réalité"
+            : "Making Your Web Project a Reality"}
         </h4>
 
         <h1 className="py-4">
@@ -22,11 +24,21 @@ const Header = () => {
           Front-End Developer
         </h1>
 
-        <p className="text-lg py-4 sm:max-w-[70%] m-auto">
-          {french
-            ? "Je m'applique à créer des applications Web responsives, rapides et performantes tout en apprenant les technologies Back End."
-            : "I'm focused on building responsive, fast and highly performant Web Applications while learning back-end technologies."}
-        </p>
+        {french ? (
+          <p className="text-lg py-4 sm:max-w-[70%] m-auto">
+            En utilisant mon expertise en Next.js et React, je crée des
+            applications web user-friendly et performantes qui visent à obtenir
+            des résultats concrets, tout en répondant aux besoins et objectifs
+            spécifiques de mes clients.
+          </p>
+        ) : (
+          <p className="text-lg py-4 sm:max-w-[70%] m-auto">
+            Using my expertise in Next.js and React, I craft engaging,
+            user-friendly web applications aimed at achieving real-world
+            results, all with the goal of meeting the specific needs and
+            objectives of my clients.
+          </p>
+        )}
       </div>
 
       {/* Header Img (Portrait) */}

@@ -3,11 +3,12 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
+  const footerYear = new Date().getFullYear();
   return (
     <footer className="w-full bg-secondary py-16">
       <div className="max-w-[1240px] w-[95%] xl:w-full mx-auto flex justify-between">
         <small className="text-white">
-          &copy;2022 Aurélien Bedouet. All rights reserved
+          &copy;{footerYear} Aurélien Bedouet. All rights reserved
         </small>
 
         <div className="flex gap-4 text-white">
